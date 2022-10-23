@@ -2,6 +2,7 @@
   "name": "binar-rental",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://ImdaduRohman23.github.io/challenge-platinum",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
