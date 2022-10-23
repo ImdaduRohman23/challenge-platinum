@@ -34,7 +34,6 @@ export default function Invoice({ idPesanan, token }) {
     getOrder();
   }, []);
 
-  if (dataPesanan) {
     return (
       <div className='ticket__container'>
         <div className='ticket__orderid'>
@@ -50,7 +49,7 @@ export default function Invoice({ idPesanan, token }) {
             <div className='ticket--invoive-hl'>
               <h3>Invoice</h3>
             </div>
-            <PdfUnduh dataPesanan={dataPesanan}/>
+            {dataPesanan && <PdfUnduh dataPesanan={dataPesanan}/>}
           </div>
             <div style={{width:"100%", height:"100%"}}>
               {dataPesanan && (
@@ -62,6 +61,5 @@ export default function Invoice({ idPesanan, token }) {
         </Card>
       </div>
     );
-  } 
 }
 
